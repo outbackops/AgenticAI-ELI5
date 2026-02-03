@@ -95,14 +95,6 @@ Master complex multi-agent architectures, orchestration patterns, and production
 - [Azure Free Account](https://azure.microsoft.com/free/)
 - [Microsoft Learn - AI](https://learn.microsoft.com/en-us/training/browse/?products=azure-ai-services)
 
-## 💡 Tips for Learning
-
-1. **Start from the beginning** - Even if you have some experience, the beginner modules provide important context
-2. **Take your time** - Each module builds on previous concepts
-3. **Try the examples** - Hands-on practice is the best way to learn
-4. **Use Azure free credits** - Get $200 in free credits to experiment
-5. **Join communities** - Connect with other learners and experts
-
 ## 📞 Support
 
 For questions about:
