@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to create AI agents using Azure Foundry - A comprehensive beginner-friendly guide">
+    <title>Azure Foundry AI Agents - ELI5 Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span>🤖</span> Azure Foundry AI Agents
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#beginner">Beginner</a></li>
+                <li><a href="#intermediate">Intermediate</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>🚀 Learn Azure Foundry AI Agents</h1>
+                    <p>A beginner-friendly guide to building intelligent AI agents - Explained Like You're 5! 🎓</p>
+                    <a href="#beginner" class="cta-button">Start Learning →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beginner Section -->
+        <section id="beginner">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🌱 Beginner Level</h2>
+                    <p>Start your journey into the world of AI agents. Learn the fundamentals and get your environment ready!</p>
+                </div>
+
+                <div class="modules-grid">
+                    <!-- Module 1 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">📚</span> Module 1: Introduction to AI and AI Agents</h3>
+                        
+                        <h4>🤔 What is AI?</h4>
+                        <p>Artificial Intelligence (AI) is like teaching a computer to think and learn, similar to how humans do! Imagine if your computer could:</p>
+                        <ul>
+                            <li>🗣️ Understand what you're saying</li>
+                            <li>🧠 Learn from experience</li>
+                            <li>🎯 Make decisions on its own</li>
+                            <li>💡 Solve problems creatively</li>
+                        </ul>
+
+                        <h4>🤖 What are AI Agents?</h4>
+                        <p>An AI agent is like a smart robot helper that can:</p>
+                        <ul>
+                            <li><strong>Perceive:</strong> Understand what's happening around it</li>
+                            <li><strong>Think:</strong> Process information and make decisions</li>
+                            <li><strong>Act:</strong> Take actions to achieve goals</li>
+                            <li><strong>Learn:</strong> Get better over time</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <h4>🌟 Real-World Examples:</h4>
+                            <ul>
+                                <li><strong>Customer Service Bot:</strong> Answers customer questions 24/7</li>
+                                <li><strong>Personal Assistant:</strong> Schedules meetings, sends emails, sets reminders</li>
+                                <li><strong>Code Helper:</strong> Suggests code improvements and finds bugs</li>
+                                <li><strong>Data Analyzer:</strong> Reads through thousands of documents and summarizes them</li>
+                            </ul>
+                        </div>
+
+                        <div class="diagram-container">
+                            <div class="diagram-title">AI Agent Basic Workflow</div>
+                            <div class="mermaid">
+                                graph LR
+                                    A[👤 User Input] --> B[🧠 AI Agent]
+                                    B --> C{Process & Think}
+                                    C --> D[🎯 Action]
+                                    D --> E[📊 Result]
+                                    E --> F[👤 User]
+                                    style B fill:#0078d4,color:#fff
+                                    style C fill:#00c853,color:#fff
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <strong>💡 Key Takeaway:</strong> AI agents are autonomous programs that can understand, think, and act to help solve problems!
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">☁️</span> Module 2: Introduction to Azure Foundry</h3>
+                        
+                        <h4>🎯 What is Azure Foundry?</h4>
+                        <p>Azure Foundry is Microsoft's platform for building AI applications. Think of it as a complete toolkit that gives you everything needed to create smart AI agents!</p>
+
+                        <h4>🔑 Key Components:</h4>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <h4>🧩 AI Models</h4>
+                                <p>Pre-trained AI brains (GPT-4, GPT-3.5, etc.)</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>🔧 Tools & SDKs</h4>
+                                <p>Ready-to-use code libraries</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>🗄️ Data Storage</h4>
+                                <p>Places to store your data securely</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>📊 Monitoring</h4>
+                                <p>Track how your agents perform</p>
+                            </div>
+                        </div>
+
+                        <h4>🏗️ Architecture Overview:</h4>
+                        <div class="diagram-container">
+                            <div class="diagram-title">Azure Foundry Architecture</div>
+                            <div class="mermaid">
+                                graph TB
+                                    A[👤 Your Application] --> B[Azure Foundry Platform]
+                                    B --> C[🧠 AI Models<br/>GPT-4, GPT-3.5]
+                                    B --> D[🔧 Agent Tools<br/>Functions, APIs]
+                                    B --> E[🗄️ Data Storage<br/>Vector DB, Blob]
+                                    B --> F[📊 Monitoring<br/>Application Insights]
+                                    C --> G[💬 Responses]
+                                    D --> G
+                                    E --> G
+                                    G --> A
+                                    style B fill:#0078d4,color:#fff
+                                    style G fill:#00c853,color:#fff
+                            </div>
+                        </div>
+
+                        <h4>🎁 Why Choose Azure Foundry?</h4>
+                        <ul>
+                            <li>✅ <strong>Enterprise-Ready:</strong> Built for security and scale</li>
+                            <li>✅ <strong>Easy to Use:</strong> Simple APIs and SDKs</li>
+                            <li>✅ <strong>Integrated:</strong> Works with other Azure services</li>
+                            <li>✅ <strong>Flexible:</strong> Use pre-built models or bring your own</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📖 Learn More:</strong> 
+                            <a href="https://learn.microsoft.com/en-us/azure/ai-services/" target="_blank" class="doc-link">
+                                Azure AI Services Documentation →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">⚙️</span> Module 3: Setting Up Your Environment</h3>
+                        
+                        <h4>📋 Prerequisites:</h4>
+                        <ul>
+                            <li>💻 A computer (Windows, Mac, or Linux)</li>
+                            <li>🌐 Internet connection</li>
+                            <li>💳 Azure account (free tier available!)</li>
+                            <li>🐍 Python 3.8+ installed</li>
+                            <li>📝 A code editor (VS Code recommended)</li>
+                        </ul>
+
+                        <h4>🚀 Step-by-Step Setup:</h4>
+                        <ol class="step-list">
+                            <li>
+                                <strong>Create an Azure Account</strong>
+                                <p>Visit <a href="https://azure.microsoft.com/free" target="_blank">azure.microsoft.com/free</a> and sign up for a free account. You'll get $200 credit to start!</p>
+                            </li>
+                            <li>
+                                <strong>Install Azure CLI</strong>
+                                <pre><code># Windows (PowerShell)
+winget install Microsoft.AzureCLI
+
+# macOS
+brew install azure-cli
+
+# Linux
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash</code></pre>
+                            </li>
+                            <li>
+                                <strong>Login to Azure</strong>
+                                <pre><code>az login</code></pre>
+                            </li>
+                            <li>
+                                <strong>Install Python SDK</strong>
+                                <pre><code>pip install azure-ai-inference
+pip install openai
+pip install python-dotenv</code></pre>
+                            </li>
+                            <li>
+                                <strong>Create Your First Project</strong>
+                                <pre><code># Create project directory
+mkdir my-first-ai-agent
+cd my-first-ai-agent
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Create main file
+touch app.py</code></pre>
+                            </li>
+                        </ol>
+
+                        <div class="example-box">
+                            <h4>🎉 Your First Hello World Agent:</h4>
+                            <pre><code>from openai import AzureOpenAI
+
+# Initialize client
+client = AzureOpenAI(
+    api_key="your-api-key",
+    api_version="2024-02-15-preview",
+    azure_endpoint="your-endpoint"
+)
+
+# Create a simple agent
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=[
+        {"role": "system", "content": "You are a helpful AI agent."},
+        {"role": "user", "content": "Hello! Who are you?"}
+    ]
+)
+
+print(response.choices[0].message.content)</code></pre>
+                        </div>
+
+                        <div class="tip-box">
+                            <strong>💡 Pro Tip:</strong> Always store your API keys in environment variables, never in your code! Use a <code>.env</code> file and add it to <code>.gitignore</code>.
+                        </div>
+
+                        <div class="info-box">
+                            <strong>📖 Documentation:</strong>
+                            <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart" target="_blank" class="doc-link">
+                                Azure OpenAI Quickstart →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intermediate Section -->
+        <section id="intermediate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🚀 Intermediate Level</h2>
+                    <p>Build real AI agents, master prompting techniques, and work with tools and functions!</p>
+                </div>
+
+                <div class="modules-grid">
+                    <!-- Module 4 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">🏗️</span> Module 4: Building Your First AI Agent</h3>
+                        
+                        <h4>🧩 Agent Components:</h4>
+                        <p>Every AI agent consists of these key parts:</p>
+                        
+                        <div class="diagram-container">
+                            <div class="diagram-title">AI Agent Components</div>
+                            <div class="mermaid">
+                                graph TB
+                                    A[🎯 Agent Core] --> B[🧠 Model<br/>The AI Brain]
+                                    A --> C[�� Prompts<br/>Instructions]
+                                    A --> D[🔧 Tools<br/>Capabilities]
+                                    A --> E[💾 Memory<br/>Context]
+                                    B --> F[📤 Outputs]
+                                    C --> F
+                                    D --> F
+                                    E --> F
+                                    style A fill:#0078d4,color:#fff
+                                    style F fill:#00c853,color:#fff
+                            </div>
+                        </div>
+
+                        <h4>💬 Creating a Chat Agent:</h4>
+                        <div class="example-box">
+                            <pre><code>from openai import AzureOpenAI
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+class SimpleAgent:
+    def __init__(self):
+        self.client = AzureOpenAI(
+            api_key=os.getenv("AZURE_OPENAI_KEY"),
+            api_version="2024-02-15-preview",
+            azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
+        )
+        self.conversation_history = []
+    
+    def chat(self, user_message):
+        # Add user message to history
+        self.conversation_history.append({
+            "role": "user",
+            "content": user_message
+        })
+        
+        # Get AI response
+        response = self.client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                *self.conversation_history
+            ],
+            temperature=0.7,
+            max_tokens=500
+        )
+        
+        # Extract and store assistant's response
+        assistant_message = response.choices[0].message.content
+        self.conversation_history.append({
+            "role": "assistant",
+            "content": assistant_message
+        })
+        
+        return assistant_message
+
+# Usage
+agent = SimpleAgent()
+print(agent.chat("What is Python?"))
+print(agent.chat("Can you give me an example?"))</code></pre>
+                        </div>
+
+                        <h4>🎚️ Important Parameters:</h4>
+                        <ul>
+                            <li><strong>temperature</strong> (0.0-2.0): Controls randomness. Lower = more focused, Higher = more creative</li>
+                            <li><strong>max_tokens</strong>: Maximum length of response</li>
+                            <li><strong>top_p</strong> (0.0-1.0): Alternative to temperature for controlling randomness</li>
+                            <li><strong>frequency_penalty</strong> (-2.0 to 2.0): Reduces repetition</li>
+                            <li><strong>presence_penalty</strong> (-2.0 to 2.0): Encourages new topics</li>
+                        </ul>
+
+                        <h4>🚀 Deployment Basics:</h4>
+                        <ol>
+                            <li>✅ Test your agent thoroughly</li>
+                            <li>✅ Set up error handling</li>
+                            <li>✅ Add logging and monitoring</li>
+                            <li>✅ Deploy to Azure App Service or Container Apps</li>
+                            <li>✅ Set up authentication</li>
+                        </ol>
+
+                        <div class="tip-box">
+                            <strong>💡 Best Practice:</strong> Always include a system message that defines your agent's personality and behavior!
+                        </div>
+                    </div>
+
+                    <!-- Module 5 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">✍️</span> Module 5: Understanding Agent Prompts and Responses</h3>
+                        
+                        <h4>🎯 What Makes a Good Prompt?</h4>
+                        <p>Think of prompts as instructions you give to your agent. The clearer you are, the better the results!</p>
+
+                        <h4>🔑 Prompting Techniques:</h4>
+                        
+                        <div class="example-box">
+                            <h4>1️⃣ Zero-Shot Prompting</h4>
+                            <p>Just ask directly:</p>
+                            <pre><code>User: "Translate 'Hello' to Spanish"
+Agent: "Hola"</code></pre>
+                        </div>
+
+                        <div class="example-box">
+                            <h4>2️⃣ Few-Shot Prompting</h4>
+                            <p>Give examples first:</p>
+                            <pre><code>User: "Classify the sentiment:
+Example 1: 'I love this!' → Positive
+Example 2: 'This is terrible' → Negative
+Example 3: 'This product is amazing!' → ?"
+Agent: "Positive"</code></pre>
+                        </div>
+
+                        <div class="example-box">
+                            <h4>3️⃣ Chain-of-Thought</h4>
+                            <p>Ask the agent to think step-by-step:</p>
+                            <pre><code>User: "Let's think step by step. If a train travels 60 mph for 2 hours, how far does it go?"
+Agent: "Let me break this down:
+1. Speed = 60 miles per hour
+2. Time = 2 hours
+3. Distance = Speed × Time
+4. Distance = 60 × 2 = 120 miles
+The train travels 120 miles."</code></pre>
+                        </div>
+
+                        <h4>💬 System vs User Prompts:</h4>
+                        
+                        <div class="diagram-container">
+                            <div class="diagram-title">Message Roles</div>
+                            <div class="mermaid">
+                                graph LR
+                                    A[System Message] -->|Sets Behavior| B[Agent Personality]
+                                    C[User Message] -->|Requests| D[Agent Response]
+                                    B --> D
+                                    E[Assistant Message] -->|History| D
+                                    style A fill:#ff9800,color:#fff
+                                    style C fill:#0078d4,color:#fff
+                                    style E fill:#00c853,color:#fff
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <ul>
+                                <li><strong>System:</strong> Sets the overall behavior and personality (e.g., "You are a helpful Python tutor")</li>
+                                <li><strong>User:</strong> The actual questions or requests from the user</li>
+                                <li><strong>Assistant:</strong> Previous responses from the AI (for context)</li>
+                            </ul>
+                        </div>
+
+                        <h4>⚠️ Common Pitfalls to Avoid:</h4>
+                        <ul>
+                            <li>❌ <strong>Too Vague:</strong> "Tell me about AI" → ✅ "Explain AI agents in 3 sentences"</li>
+                            <li>❌ <strong>Too Complex:</strong> Multiple questions at once → ✅ One clear question</li>
+                            <li>❌ <strong>No Context:</strong> Missing background info → ✅ Provide relevant details</li>
+                            <li>❌ <strong>Contradictory:</strong> Mixed instructions → ✅ Clear, consistent guidelines</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <h4>🌟 Example: Good vs Bad Prompts</h4>
+                            <pre><code>❌ Bad: "code"
+
+✅ Good: "Write a Python function that takes a list of numbers 
+and returns the average. Include error handling for empty lists 
+and non-numeric values."</code></pre>
+                        </div>
+
+                        <div class="tip-box">
+                            <strong>💡 Pro Tip:</strong> Use delimiters like """triple quotes""" or ###hashtags### to clearly separate different parts of your prompt!
+                        </div>
+
+                        <div class="info-box">
+                            <strong>📖 Learn More:</strong>
+                            <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering" target="_blank" class="doc-link">
+                                Prompt Engineering Guide →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Module 6 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">🔧</span> Module 6: Working with Tools and Functions</h3>
+                        
+                        <h4>🤔 What are Tools?</h4>
+                        <p>Tools give your AI agent superpowers! They allow the agent to:</p>
+                        <ul>
+                            <li>🔍 Search the web</li>
+                            <li>📊 Query databases</li>
+                            <li>📧 Send emails</li>
+                            <li>🧮 Perform calculations</li>
+                            <li>🌐 Call APIs</li>
+                        </ul>
+
+                        <div class="diagram-container">
+                            <div class="diagram-title">Function Calling Flow</div>
+                            <div class="mermaid">
+                                sequenceDiagram
+                                    participant U as User
+                                    participant A as Agent
+                                    participant T as Tool/Function
+                                    U->>A: "What's the weather in Seattle?"
+                                    A->>A: Decides to use get_weather()
+                                    A->>T: get_weather("Seattle")
+                                    T->>A: "72°F, Sunny"
+                                    A->>U: "It's 72°F and sunny in Seattle!"
+                            </div>
+                        </div>
+
+                        <h4>🛠️ Built-in Tools:</h4>
+                        <p>Azure Foundry provides several ready-to-use tools:</p>
+                        <ul>
+                            <li>�� <strong>Web Search:</strong> Bing Search integration</li>
+                            <li>💾 <strong>Data Storage:</strong> Azure Blob Storage</li>
+                            <li>📊 <strong>Data Analysis:</strong> Azure Cognitive Search</li>
+                            <li>🗣️ <strong>Speech:</strong> Text-to-speech and speech-to-text</li>
+                        </ul>
+
+                        <h4>⚡ Creating Custom Tools:</h4>
+                        <div class="example-box">
+                            <pre><code>import json
+from openai import AzureOpenAI
+
+# Define your function
+def get_weather(location):
+    """Get current weather for a location"""
+    # In real app, call weather API
+    return {
+        "location": location,
+        "temperature": "72°F",
+        "condition": "Sunny"
+    }
+
+# Define function schema for the agent
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_weather",
+            "description": "Get the current weather in a given location",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "location": {
+                        "type": "string",
+                        "description": "The city name, e.g. Seattle"
+                    }
+                },
+                "required": ["location"]
+            }
+        }
+    }
+]
+
+# Use with agent
+client = AzureOpenAI(...)
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=[
+        {"role": "user", "content": "What's the weather in Seattle?"}
+    ],
+    tools=tools,
+    tool_choice="auto"
+)
+
+# Check if agent wants to call a function
+if response.choices[0].message.tool_calls:
+    tool_call = response.choices[0].message.tool_calls[0]
+    function_name = tool_call.function.name
+    function_args = json.loads(tool_call.function.arguments)
+    
+    # Execute the function
+    if function_name == "get_weather":
+        result = get_weather(**function_args)
+        
+        # Send result back to agent
+        second_response = client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "user", "content": "What's the weather in Seattle?"},
+                response.choices[0].message,
+                {
+                    "role": "tool",
+                    "tool_call_id": tool_call.id,
+                    "content": json.dumps(result)
+                }
+            ]
+        )
+        print(second_response.choices[0].message.content)</code></pre>
+                        </div>
+
+                        <h4>🎯 Best Practices:</h4>
+                        <ul>
+                            <li>✅ Give functions clear, descriptive names</li>
+                            <li>✅ Write detailed descriptions (the agent reads these!)</li>
+                            <li>✅ Validate function inputs</li>
+                            <li>✅ Handle errors gracefully</li>
+                            <li>✅ Keep functions focused (do one thing well)</li>
+                        </ul>
+
+                        <div class="warning-box">
+                            <strong>⚠️ Security Note:</strong> Always validate and sanitize inputs to your functions! Never execute arbitrary code from function calls.
+                        </div>
+
+                        <div class="tip-box">
+                            <strong>💡 Pro Tip:</strong> Start with 2-3 simple functions and test thoroughly before adding more. Too many tools can confuse the agent!
+                        </div>
+
+                        <div class="info-box">
+                            <strong>📖 Documentation:</strong>
+                            <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling" target="_blank" class="doc-link">
+                                Function Calling Guide →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Section -->
+        <section id="advanced">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🎓 Advanced Level</h2>
+                    <p>Master multi-agent systems, orchestration, and production-ready deployments!</p>
+                </div>
+
+                <div class="modules-grid">
+                    <!-- Module 7 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">🤝</span> Module 7: Multi-Agent Systems</h3>
+                        
+                        <h4>🤔 Why Multiple Agents?</h4>
+                        <p>Sometimes one agent isn't enough! Multi-agent systems let you:</p>
+                        <ul>
+                            <li>🎯 <strong>Specialize:</strong> Each agent excels at specific tasks</li>
+                            <li>⚡ <strong>Parallelize:</strong> Multiple agents work simultaneously</li>
+                            <li>🔄 <strong>Collaborate:</strong> Agents share information and delegate tasks</li>
+                            <li>🛡️ <strong>Validate:</strong> One agent checks another's work</li>
+                        </ul>
+
+                        <h4>🏗️ Architecture Patterns:</h4>
+                        
+                        <div class="diagram-container">
+                            <div class="diagram-title">1. Hierarchical Pattern (Manager-Worker)</div>
+                            <div class="mermaid">
+                                graph TB
+                                    A[👔 Manager Agent] --> B[🤖 Worker Agent 1<br/>Researcher]
+                                    A --> C[🤖 Worker Agent 2<br/>Writer]
+                                    A --> D[�� Worker Agent 3<br/>Reviewer]
+                                    B --> E[📊 Final Result]
+                                    C --> E
+                                    D --> E
+                                    style A fill:#0078d4,color:#fff
+                                    style E fill:#00c853,color:#fff
+                            </div>
+                        </div>
+
+                        <div class="diagram-container">
+                            <div class="diagram-title">2. Pipeline Pattern (Sequential)</div>
+                            <div class="mermaid">
+                                graph LR
+                                    A[📥 Input] --> B[🤖 Agent 1<br/>Analyzer]
+                                    B --> C[🤖 Agent 2<br/>Processor]
+                                    C --> D[🤖 Agent 3<br/>Formatter]
+                                    D --> E[📤 Output]
+                                    style B fill:#0078d4,color:#fff
+                                    style C fill:#0078d4,color:#fff
+                                    style D fill:#0078d4,color:#fff
+                            </div>
+                        </div>
+
+                        <div class="diagram-container">
+                            <div class="diagram-title">3. Collaborative Pattern (Peer-to-Peer)</div>
+                            <div class="mermaid">
+                                graph TB
+                                    A[🤖 Agent 1] <--> B[🤖 Agent 2]
+                                    B <--> C[🤖 Agent 3]
+                                    C <--> A
+                                    A --> D[📊 Consensus]
+                                    B --> D
+                                    C --> D
+                                    style D fill:#00c853,color:#fff
+                            </div>
+                        </div>
+
+                        <h4>💬 Agent Communication:</h4>
+                        <div class="example-box">
+                            <pre><code>class AgentTeam:
+    def __init__(self):
+        self.researcher = ResearchAgent()
+        self.writer = WriterAgent()
+        self.reviewer = ReviewerAgent()
+        self.shared_memory = {}
+    
+    def process_request(self, topic):
+        # Step 1: Research
+        research_data = self.researcher.research(topic)
+        self.shared_memory['research'] = research_data
+        
+        # Step 2: Write
+        article = self.writer.write(
+            topic, 
+            research=research_data
+        )
+        self.shared_memory['draft'] = article
+        
+        # Step 3: Review
+        reviewed = self.reviewer.review(article)
+        
+        # If needs improvement, loop back
+        if reviewed['needs_revision']:
+            article = self.writer.revise(
+                article, 
+                feedback=reviewed['feedback']
+            )
+        
+        return article
+
+# Usage
+team = AgentTeam()
+result = team.process_request("AI Safety Best Practices")</code></pre>
+                        </div>
+
+                        <h4>🎯 Use Cases:</h4>
+                        <ul>
+                            <li>📝 <strong>Content Creation:</strong> Researcher + Writer + Editor</li>
+                            <li>💼 <strong>Business Analysis:</strong> Data Collector + Analyzer + Reporter</li>
+                            <li>🛠️ <strong>Software Development:</strong> Planner + Coder + Tester</li>
+                            <li>🎧 <strong>Customer Support:</strong> Classifier + Specialist + Quality Checker</li>
+                        </ul>
+
+                        <div class="tip-box">
+                            <strong>💡 Pro Tip:</strong> Start simple! Begin with 2-3 agents and add more only when needed. Complexity grows quickly!
+                        </div>
+
+                        <div class="info-box">
+                            <strong>📖 Learn More:</strong>
+                            <a href="https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/multi-agent-systems" target="_blank" class="doc-link">
+                                Multi-Agent Systems on Azure →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Module 8 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">🎼</span> Module 8: Agent Orchestration and Workflows</h3>
+                        
+                        <h4>🎯 What is Orchestration?</h4>
+                        <p>Orchestration is like being a conductor of an orchestra - coordinating multiple agents to work together harmoniously!</p>
+
+                        <h4>🔧 Azure Orchestration Tools:</h4>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <h4>⚡ Azure Logic Apps</h4>
+                                <p>Visual workflow designer</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>🔄 Durable Functions</h4>
+                                <p>Code-first orchestration</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>📊 Azure AI Studio</h4>
+                                <p>AI-specific workflows</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>🌊 Event Grid</h4>
+                                <p>Event-driven coordination</p>
+                            </div>
+                        </div>
+
+                        <h4>🏗️ Common Orchestration Patterns:</h4>
+                        
+                        <div class="diagram-container">
+                            <div class="diagram-title">Sequential Workflow</div>
+                            <div class="mermaid">
+                                graph LR
+                                    A[Start] --> B[Agent 1]
+                                    B --> C{Success?}
+                                    C -->|Yes| D[Agent 2]
+                                    C -->|No| E[Error Handler]
+                                    D --> F[Agent 3]
+                                    F --> G[End]
+                                    E --> G
+                                    style B fill:#0078d4,color:#fff
+                                    style D fill:#0078d4,color:#fff
+                                    style F fill:#0078d4,color:#fff
+                            </div>
+                        </div>
+
+                        <div class="diagram-container">
+                            <div class="diagram-title">Parallel Workflow</div>
+                            <div class="mermaid">
+                                graph TB
+                                    A[Start] --> B{Split}
+                                    B --> C[Agent 1]
+                                    B --> D[Agent 2]
+                                    B --> E[Agent 3]
+                                    C --> F{Merge}
+                                    D --> F
+                                    E --> F
+                                    F --> G[Aggregator Agent]
+                                    G --> H[End]
+                                    style C fill:#0078d4,color:#fff
+                                    style D fill:#0078d4,color:#fff
+                                    style E fill:#0078d4,color:#fff
+                            </div>
+                        </div>
+
+                        <h4>💾 State Management:</h4>
+                        <div class="example-box">
+                            <pre><code>from azure.durable_functions import DurableOrchestrationContext
+import azure.durable_functions as df
+
+def orchestrator_function(context: DurableOrchestrationContext):
+    """Orchestrate multiple agents"""
+    
+    # Initialize state
+    workflow_state = {
+        'status': 'started',
+        'data': {},
+        'timestamp': context.current_utc_datetime
+    }
+    
+    # Step 1: Data Collection
+    input_data = yield context.call_activity('collect_data')
+    workflow_state['data']['raw'] = input_data
+    
+    # Step 2: Parallel Processing
+    tasks = [
+        context.call_activity('agent_analyze', input_data),
+        context.call_activity('agent_summarize', input_data),
+        context.call_activity('agent_categorize', input_data)
+    ]
+    results = yield context.task_all(tasks)
+    
+    # Step 3: Aggregate Results
+    final_result = yield context.call_activity(
+        'aggregate_results', 
+        results
+    )
+    
+    workflow_state['status'] = 'completed'
+    workflow_state['result'] = final_result
+    
+    return workflow_state
+
+# Register orchestrator
+main = df.Orchestrator.create(orchestrator_function)</code></pre>
+                        </div>
+
+                        <h4>🎯 Best Practices:</h4>
+                        <ul>
+                            <li>✅ <strong>Idempotent Operations:</strong> Design activities to be safely retried</li>
+                            <li>✅ <strong>Checkpoint State:</strong> Save progress regularly</li>
+                            <li>✅ <strong>Handle Timeouts:</strong> Set reasonable time limits</li>
+                            <li>✅ <strong>Monitor Workflows:</strong> Track execution and failures</li>
+                            <li>✅ <strong>Error Recovery:</strong> Implement retry logic and fallbacks</li>
+                        </ul>
+
+                        <div class="diagram-container">
+                            <div class="diagram-title">Complete Orchestration Example</div>
+                            <div class="mermaid">
+                                sequenceDiagram
+                                    participant U as User
+                                    participant O as Orchestrator
+                                    participant A1 as Agent 1
+                                    participant A2 as Agent 2
+                                    participant A3 as Agent 3
+                                    participant D as Database
+                                    
+                                    U->>O: Submit Request
+                                    O->>D: Save State
+                                    O->>A1: Process Step 1
+                                    A1->>O: Result 1
+                                    O->>D: Update State
+                                    
+                                    par Parallel Execution
+                                        O->>A2: Process Step 2a
+                                        O->>A3: Process Step 2b
+                                    end
+                                    
+                                    A2->>O: Result 2a
+                                    A3->>O: Result 2b
+                                    O->>D: Final State
+                                    O->>U: Complete
+                            </div>
+                        </div>
+
+                        <div class="warning-box">
+                            <strong>⚠️ Important:</strong> Always implement proper error handling and logging in orchestrations. Failures in one agent shouldn't crash the entire workflow!
+                        </div>
+
+                        <div class="info-box">
+                            <strong>📖 Documentation:</strong>
+                            <a href="https://learn.microsoft.com/en-us/azure/azure-functions/durable/" target="_blank" class="doc-link">
+                                Azure Durable Functions →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Module 9 -->
+                    <div class="module-card">
+                        <h3><span class="emoji">🚀</span> Module 9: Best Practices and Deployment</h3>
+                        
+                        <h4>✅ Production Readiness Checklist:</h4>
+                        <ol class="step-list">
+                            <li>
+                                <strong>Security</strong>
+                                <ul>
+                                    <li>🔐 Use Azure Key Vault for secrets</li>
+                                    <li>🛡️ Implement authentication (Azure AD)</li>
+                                    <li>🔒 Enable HTTPS only</li>
+                                    <li>🚫 Input validation and sanitization</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Performance</strong>
+                                <ul>
+                                    <li>⚡ Implement caching strategies</li>
+                                    <li>📊 Set up auto-scaling</li>
+                                    <li>🎯 Optimize token usage</li>
+                                    <li>⏱️ Add request timeouts</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Monitoring</strong>
+                                <ul>
+                                    <li>📈 Azure Application Insights</li>
+                                    <li>🚨 Set up alerts for failures</li>
+                                    <li>📝 Comprehensive logging</li>
+                                    <li>💰 Cost tracking and budgets</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Reliability</strong>
+                                <ul>
+                                    <li>🔄 Implement retry logic</li>
+                                    <li>🎪 Circuit breakers for failures</li>
+                                    <li>💾 Database backups</li>
+                                    <li>🧪 Comprehensive testing</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <h4>🤝 Responsible AI Principles:</h4>
+                        <div class="info-box">
+                            <ul>
+                                <li>⚖️ <strong>Fairness:</strong> Ensure your agent treats everyone fairly</li>
+                                <li>🔍 <strong>Transparency:</strong> Be clear about AI limitations</li>
+                                <li>🔒 <strong>Privacy:</strong> Protect user data</li>
+                                <li>🛡️ <strong>Safety:</strong> Implement content filters</li>
+                                <li>📊 <strong>Accountability:</strong> Log decisions for audit trails</li>
+                            </ul>
+                        </div>
+
+                        <div class="example-box">
+                            <h4>🛡️ Implementing Content Safety:</h4>
+                            <pre><code>from azure.ai.contentsafety import ContentSafetyClient
+from azure.core.credentials import AzureKeyCredential
+
+def check_content_safety(text):
+    """Check if content is safe"""
+    client = ContentSafetyClient(
+        endpoint=os.getenv("CONTENT_SAFETY_ENDPOINT"),
+        credential=AzureKeyCredential(os.getenv("CONTENT_SAFETY_KEY"))
+    )
+    
+    result = client.analyze_text(text)
+    
+    # Check severity levels (0-6, 6 is most severe)
+    if any(category.severity >= 4 for category in result.categories_analysis):
+        return False, "Content flagged as unsafe"
+    
+    return True, "Content is safe"
+
+# Use before processing user input
+user_input = "..."
+is_safe, message = check_content_safety(user_input)
+
+if not is_safe:
+    return {"error": "Content policy violation"}</code></pre>
+                        </div>
+
+                        <h4>🌍 Deployment Strategies:</h4>
+                        
+                        <div class="diagram-container">
+                            <div class="diagram-title">Deployment Architecture</div>
+                            <div class="mermaid">
+                                graph TB
+                                    A[👥 Users] --> B[🌐 Azure Front Door]
+                                    B --> C[⚖️ Load Balancer]
+                                    C --> D[🚀 Container Apps 1]
+                                    C --> E[🚀 Container Apps 2]
+                                    D --> F[🧠 Azure OpenAI]
+                                    E --> F
+                                    D --> G[💾 Cosmos DB]
+                                    E --> G
+                                    F --> H[📊 App Insights]
+                                    G --> H
+                                    style F fill:#0078d4,color:#fff
+                                    style G fill:#00c853,color:#fff
+                            </div>
+                        </div>
+
+                        <h4>💰 Cost Optimization:</h4>
+                        <ul>
+                            <li>💡 <strong>Token Management:</strong> Use shorter prompts when possible</li>
+                            <li>🎯 <strong>Model Selection:</strong> Use GPT-3.5 for simple tasks, GPT-4 for complex ones</li>
+                            <li>💾 <strong>Caching:</strong> Cache frequent responses</li>
+                            <li>⏰ <strong>Rate Limiting:</strong> Prevent abuse</li>
+                            <li>📊 <strong>Monitoring:</strong> Track usage and set budgets</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <h4>📦 Deployment Script:</h4>
+                            <pre><code># Build Docker image
+docker build -t myagent:latest .
+
+# Push to Azure Container Registry
+az acr login --name myregistry
+docker tag myagent:latest myregistry.azurecr.io/myagent:latest
+docker push myregistry.azurecr.io/myagent:latest
+
+# Deploy to Azure Container Apps
+az containerapp create \
+  --name my-ai-agent \
+  --resource-group myResourceGroup \
+  --environment myEnvironment \
+  --image myregistry.azurecr.io/myagent:latest \
+  --target-port 8000 \
+  --ingress external \
+  --min-replicas 1 \
+  --max-replicas 10 \
+  --env-vars \
+    AZURE_OPENAI_KEY=secretref:openai-key \
+    AZURE_OPENAI_ENDPOINT=secretref:openai-endpoint</code></pre>
+                        </div>
+
+                        <div class="tip-box">
+                            <strong>💡 Pro Tip:</strong> Use Azure DevOps or GitHub Actions for CI/CD pipelines. Automate testing and deployment!
+                        </div>
+
+                        <h4>🧪 Testing Strategy:</h4>
+                        <ul>
+                            <li>✅ <strong>Unit Tests:</strong> Test individual agent functions</li>
+                            <li>✅ <strong>Integration Tests:</strong> Test agent interactions</li>
+                            <li>✅ <strong>Load Tests:</strong> Ensure it handles traffic</li>
+                            <li>✅ <strong>Security Tests:</strong> Test for vulnerabilities</li>
+                            <li>✅ <strong>A/B Testing:</strong> Compare different prompts/models</li>
+                        </ul>
+
+                        <div class="warning-box">
+                            <strong>⚠️ Critical:</strong> Never deploy directly to production! Always test in staging first with real-world scenarios.
+                        </div>
+
+                        <div class="info-box">
+                            <strong>📖 Resources:</strong><br>
+                            <a href="https://learn.microsoft.com/en-us/azure/architecture/guide/responsible-innovation/responsible-ai" target="_blank" class="doc-link">
+                                Responsible AI →
+                            </a><br>
+                            <a href="https://learn.microsoft.com/en-us/azure/container-apps/" target="_blank" class="doc-link">
+                                Container Apps Deployment →
+                            </a><br>
+                            <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview" target="_blank" class="doc-link">
+                                Application Insights →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Congratulations Section -->
+                <div class="module-card" style="margin-top: 40px; border-left: 5px solid #00c853;">
+                    <h3>�� Congratulations!</h3>
+                    <p>You've completed the Azure Foundry AI Agents course! You now know:</p>
+                    <ul>
+                        <li>✅ What AI agents are and how they work</li>
+                        <li>✅ How to set up and use Azure Foundry</li>
+                        <li>✅ Building and deploying AI agents</li>
+                        <li>✅ Advanced prompting techniques</li>
+                        <li>✅ Working with tools and functions</li>
+                        <li>✅ Multi-agent systems and orchestration</li>
+                        <li>✅ Production best practices</li>
+                    </ul>
+                    
+                    <div class="info-box" style="margin-top: 20px;">
+                        <h4>🚀 Next Steps:</h4>
+                        <ol>
+                            <li>Build your own AI agent project</li>
+                            <li>Join the Azure AI community</li>
+                            <li>Explore Azure AI Studio</li>
+                            <li>Contribute to open-source AI projects</li>
+                            <li>Stay updated with Azure AI updates</li>
+                        </ol>
+                    </div>
+
+                    <div class="text-center" style="margin-top: 30px;">
+                        <h4>Happy Building! 🚀🤖</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>📚 Additional Resources</h3>
+            <div class="footer-links">
+                <a href="https://learn.microsoft.com/en-us/azure/ai-services/" target="_blank">Azure AI Services</a>
+                <a href="https://learn.microsoft.com/en-us/azure/ai-studio/" target="_blank">Azure AI Studio</a>
+                <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/" target="_blank">Azure OpenAI</a>
+                <a href="https://github.com/Azure-Samples" target="_blank">Azure Samples (GitHub)</a>
+                <a href="https://learn.microsoft.com/en-us/training/azure/" target="_blank">Microsoft Learn</a>
+            </div>
+            <p style="margin-top: 30px; opacity: 0.9;">
+                &copy; 2024 Azure Foundry AI Agents Tutorial | Built with ❤️ for learners
+            </p>
+            <p style="opacity: 0.8;">
+                This is an educational resource. Always refer to official Microsoft documentation for production use.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
