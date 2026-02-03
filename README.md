@@ -2,9 +2,11 @@
 
 A comprehensive, beginner-friendly tutorial website for learning how to create AI agents using Azure Foundry. Explained Like You're 5!
 
+Built with [MkDocs](https://www.mkdocs.org/) and the [Material theme](https://squidfunk.github.io/mkdocs-material/).
+
 ## 🌟 Overview
 
-This static website provides a complete learning path from absolute beginner to advanced practitioner in Azure AI agent development. The tutorial is structured in three progressive levels with 9 detailed modules covering everything from AI basics to production deployment.
+This documentation site provides a complete learning path from absolute beginner to advanced practitioner in Azure AI agent development. The tutorial is structured in three progressive levels with 9 detailed modules covering everything from AI basics to production deployment.
 
 ## 📚 What You'll Learn
 
@@ -63,68 +65,87 @@ This static website provides a complete learning path from absolute beginner to 
 - **💻 Code Examples:** Practical, real-world code snippets and configurations
 - **🔗 Official References:** Direct links to Microsoft Azure documentation
 - **📱 Responsive Design:** Works perfectly on desktop, tablet, and mobile devices
-- **🎨 Modern UI:** Clean, professional design with Azure branding
-- **⚡ Interactive:** Smooth scrolling, animations, and copy-to-clipboard functionality
+- **🎨 Modern UI:** Clean Material Design theme with Azure branding
+- **🔍 Full-Text Search:** Quickly find topics across all modules
+- **🌓 Dark/Light Mode:** Choose your preferred theme
 
 ## 🚀 Getting Started
 
-### Option 1: Open Directly in Browser
-Simply open `index.html` in any modern web browser (Chrome, Edge, Firefox, Safari).
+### View Online
+Visit the live site at: **[https://outbackops.github.io/AgenticAI-ELI5/](https://outbackops.github.io/AgenticAI-ELI5/)**
 
-### Option 2: Use a Local Web Server
+### Run Locally
 
-**Using Python:**
+**Prerequisites:**
+- Python 3.8 or higher
+- pip (Python package installer)
+
+**Installation:**
+
+1. Clone the repository:
 ```bash
-# Navigate to the project directory
+git clone https://github.com/outbackops/AgenticAI-ELI5.git
 cd AgenticAI-ELI5
-
-# Start a simple HTTP server
-python3 -m http.server 8080
-
-# Open http://localhost:8080 in your browser
 ```
 
-**Using Node.js:**
+2. Install dependencies:
 ```bash
-# Install http-server globally (one time)
-npm install -g http-server
-
-# Start the server
-http-server -p 8080
-
-# Open http://localhost:8080 in your browser
+pip install -r requirements.txt
 ```
 
-**Using VS Code:**
-1. Install the "Live Server" extension
-2. Right-click on `index.html`
-3. Select "Open with Live Server"
+3. Serve the documentation locally:
+```bash
+mkdocs serve
+```
+
+4. Open your browser to `http://127.0.0.1:8000/`
+
+The local server includes hot-reload, so any changes you make to the markdown files will automatically refresh in your browser!
 
 ## 📁 Project Structure
 
 ```
 AgenticAI-ELI5/
-├── index.html          # Main tutorial website
-├── styles.css          # Styling and responsive design
-├── script.js           # Interactive features and navigation
-└── README.md           # This file
+├── docs/                           # Documentation source files
+│   ├── index.md                    # Home page
+│   ├── beginner/                   # Beginner level modules
+│   │   ├── module-1-introduction-to-ai.md
+│   │   ├── module-2-azure-foundry.md
+│   │   └── module-3-environment-setup.md
+│   ├── intermediate/               # Intermediate level modules
+│   │   ├── module-4-building-first-agent.md
+│   │   ├── module-5-prompts-and-responses.md
+│   │   └── module-6-tools-and-functions.md
+│   └── advanced/                   # Advanced level modules
+│       ├── module-7-multi-agent-systems.md
+│       ├── module-8-orchestration-workflows.md
+│       └── module-9-best-practices-deployment.md
+├── mkdocs.yml                      # MkDocs configuration
+├── requirements.txt                # Python dependencies
+├── .github/workflows/              # GitHub Actions workflows
+│   └── deploy-pages.yml            # Auto-deployment to GitHub Pages
+├── index.html                      # Legacy HTML site (kept for reference)
+├── styles.css                      # Legacy CSS (kept for reference)
+├── script.js                       # Legacy JavaScript (kept for reference)
+└── README.md                       # This file
 ```
 
 ## 🛠️ Technologies Used
 
-- **HTML5:** Semantic markup and structure
-- **CSS3:** Modern styling with gradients, animations, and responsive design
-- **JavaScript:** Interactive features and smooth navigation
+- **MkDocs:** Static site generator for documentation
+- **Material for MkDocs:** Modern, responsive documentation theme
+- **Python Markdown Extensions:** Enhanced Markdown features
 - **Mermaid.js:** Diagram rendering for visual explanations
-- **Azure Branding:** Professional design matching Microsoft's style guide
+- **GitHub Pages:** Free hosting and automatic deployment
+- **GitHub Actions:** Continuous integration and deployment
 
 ## 📖 Usage
 
-1. **Navigate:** Use the top navigation bar to jump between sections
-2. **Scroll:** Content is organized in scrollable sections for easy reading
-3. **Learn:** Follow modules in order for the best learning experience
-4. **Practice:** Try the examples in your own Azure environment
-5. **Reference:** Use Microsoft documentation links for deeper dives
+1. **Navigate:** Use the left sidebar to browse modules by difficulty level
+2. **Search:** Use the search bar at the top to find specific topics
+3. **Learn:** Follow modules in order for the best learning experience (Beginner → Intermediate → Advanced)
+4. **Practice:** Try the code examples in your own Azure environment
+5. **Reference:** Click the external documentation links for deeper dives into Azure services
 
 ## 🎯 Target Audience
 
@@ -146,11 +167,33 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
+Contributions are welcome! Here's how you can help:
+
+### Content Improvements
 - Report bugs or issues
-- Suggest new features or modules
-- Improve documentation
+- Suggest new modules or topics
 - Fix typos or errors
+- Improve explanations or examples
+
+### Local Development
+1. Fork this repository
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Make your changes to the Markdown files in the `docs/` directory
+4. Test locally: `mkdocs serve`
+5. Commit your changes: `git commit -am 'Add some feature'`
+6. Push to the branch: `git push origin feature/your-feature`
+7. Submit a pull request
+
+### Building the Documentation
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Build the site
+mkdocs build
+
+# The built site will be in the site/ directory
+```
 
 ## 💡 Tips for Learning
 
